@@ -10,3 +10,11 @@ def get_total_cash(pet_shop_info):
 
 def get_pets_sold(pet_shop_info):
     return pet_shop_info["admin"]["pets_sold"]
+
+# def increase_pets_sold(get_pets_sold, number_pets_sold):
+#     total_pets_sold = get_pets_sold(pet_shop_info) + number_pets_sold
+#     return total_pets_sold
+
+def get_stock_count(pet_shop_info):
+    stock = len(pet_shop_info["pets"])
+    return stock 
