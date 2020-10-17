@@ -24,3 +24,8 @@ def get_pets_by_breed(pet_shop_info, breed_type):
         if pet["breed"] == breed_type:
             breed_list.append(pet["breed"])
     return breed_list
+
+def find_pet_by_name(pet_shop_info, pet_name):
+    for pet in pet_shop_info["pets"]:
+        if pet["name"] == pet_name:
+            return pet
